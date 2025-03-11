@@ -1,21 +1,16 @@
 header
     padding: 20px 0
-    display: flex
-    justify-content: space-between
-    align-items: center
     .menu
         position: fixed
-        margin-right: 0
-        margin-top: 20px
-        z-index: 1000
+        margin-right: 100px
+        margin-top: 50px
         nav
-
             display: flex
             justify-content: flex-end
-
+            margin-right: 50px        
             a
-                font-size: 20px
                 margin-right: 50px
+                font-size: 20px
                 color: #ffff
                 cursor: pointer
                 transition: 1s
@@ -25,3 +20,18 @@ header
             img
                 cursor: pointer
                 width: 200px
+
+    @media screen and ( min-width: 400px )
+        .imgbox
+            img
+                width: 100px
+        nav
+            display: none
+    @media screen and (min-width: 900px)
+        .imgbox
+            img
+                width: 200px
+        nav
+            display: flex
+            justify-content: flex-end
+            margin-right: 50px
