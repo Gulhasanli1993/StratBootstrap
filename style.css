@@ -25,8 +25,7 @@ header .menu {
 header .menu nav {
   display: flex;
   justify-content: flex-end;
-  margin-right: 100px;
-  padding-left: 500px;
+  margin-right: 50px;
 }
 header .menu nav a {
   margin-right: 50px;
@@ -38,19 +37,41 @@ header .menu nav a {
 header .menu nav a:hover {
   color: #ffc800;
 }
-header .menu .imgbox {
-  margin-right: 100px;
-}
 header .menu .imgbox img {
   cursor: pointer;
-  width: 200px;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
+  header .imgbox img {
+    width: 80px;
+  }
+  header nav {
+    display: none;
+  }
+  header .btn {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid #c4ced6;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #c4ced6;
+  }
+}
+@media screen and (min-width: 600px) {
   header .imgbox img {
     width: 100px;
   }
   header nav {
     display: none;
+  }
+  header .btn {
+    display: flex;
+    flex-direction: row;
+    border: 10px solid #c4ced6;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #c4ced6;
   }
 }
 @media screen and (min-width: 900px) {
@@ -61,6 +82,12 @@ header .menu .imgbox img {
     display: flex;
     justify-content: flex-end;
     margin-right: 50px;
+  }
+  header nav a {
+    font-size: 20px;
+  }
+  header .btn {
+    display: none;
   }
 }
 
@@ -76,23 +103,18 @@ header .menu .imgbox img {
   padding-top: 150px;
 }
 #welcome .box h1 {
-  font-size: 40px;
   font-weight: 300;
   color: white;
   padding-top: 80px;
 }
 #welcome .box h3 {
-  font-size: 80px;
   font-weight: 700;
   color: white;
-  padding: 30px 0 60px;
 }
 #welcome .box .btn {
   background-color: #ffc800;
-  font-size: 20px;
   font-weight: 200;
   color: white;
-  padding: 15px 40px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -101,14 +123,29 @@ header .menu .imgbox img {
 }
 @media screen and (min-width: 300px) {
   #welcome h1 {
-    font-size: 20px;
+    font-size: 15px;
   }
   #welcome h3 {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px 0 25px;
   }
   #welcome .btn {
-    font-size: 18px;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #welcome h1 {
+    font-size: 25px;
+  }
+  #welcome h3 {
+    font-size: 45px;
+    font-weight: 500;
+    padding: 20px 0 30px;
+  }
+  #welcome .btn {
+    font-size: 15px;
     padding: 10px 20px;
   }
 }
@@ -119,10 +156,11 @@ header .menu .imgbox img {
   #welcome h3 {
     font-size: 80px;
     font-weight: 700;
+    padding: 30px 0 40px;
   }
   #welcome .btn {
     font-size: 20px;
-    padding: 15px 40px;
+    padding: 15px 35px;
   }
 }
 

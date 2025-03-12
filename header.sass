@@ -7,7 +7,7 @@ header
         nav
             display: flex
             justify-content: flex-end
-            margin-right: 50px        
+            margin-right: 50px
             a
                 margin-right: 50px
                 font-size: 20px
@@ -16,18 +16,38 @@ header
                 transition: 1s
                 &:hover
                     color: #ffc800
+        .btn
+            display: flex
+            flex-direction: row
+            border: 5px solid  #ffff            
+            border-radius: 5px
+            padding: 5px 10px
+            font-size: 15px
+            color:  #ffff
         .imgbox
             img
                 cursor: pointer
-                width: 200px
+                // width: 200px
 
-    @media screen and ( min-width: 400px )
+    @media screen and ( min-width: 300px )
+        .imgbox
+            img
+                width: 80px
+        nav
+            display: none
+        .btn
+            display: block
+
+    @media screen and (min-width: 600px)
         .imgbox
             img
                 width: 100px
         nav
             display: none
-    @media screen and (min-width: 900px)
+        .btn
+            display: block
+            
+    @media screen and ( min-width: 900px )
         .imgbox
             img
                 width: 200px
@@ -35,3 +55,7 @@ header
             display: flex
             justify-content: flex-end
             margin-right: 50px
+            a
+                font-size: 20px
+        .btn
+            display: none

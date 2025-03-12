@@ -21,16 +21,38 @@ header .menu nav a {
 header .menu nav a:hover {
   color: #ffc800;
 }
+header .menu .btn {
+  display: flex;
+  flex-direction: row;
+  border: 5px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: white;
+}
 header .menu .imgbox img {
   cursor: pointer;
-  width: 200px;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
+  header .imgbox img {
+    width: 80px;
+  }
+  header nav {
+    display: none;
+  }
+  header .btn {
+    display: block;
+  }
+}
+@media screen and (min-width: 600px) {
   header .imgbox img {
     width: 100px;
   }
   header nav {
     display: none;
+  }
+  header .btn {
+    display: block;
   }
 }
 @media screen and (min-width: 900px) {
@@ -41,5 +63,11 @@ header .menu .imgbox img {
     display: flex;
     justify-content: flex-end;
     margin-right: 50px;
+  }
+  header nav a {
+    font-size: 20px;
+  }
+  header .btn {
+    display: none;
   }
 }/*# sourceMappingURL=header.css.map */
