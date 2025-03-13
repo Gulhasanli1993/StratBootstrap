@@ -1,50 +1,17 @@
 header {
   padding: 20px 0;
+  z-index: 1000;
 }
 header .menu {
   position: fixed;
-  margin-right: 100px;
   margin-top: 50px;
-}
-header .menu nav {
-  display: flex;
-  justify-content: flex-end;
   margin-right: 50px;
-}
-header .menu nav a {
-  margin-right: 50px;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  transition: 1s;
-}
-header .menu nav a:hover {
-  color: #ffc800;
-}
-header .menu .btn {
-  display: flex;
-  flex-direction: row;
-  border: 5px solid white;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 15px;
-  color: white;
+  background-color: #212529;
 }
 header .menu .imgbox img {
   cursor: pointer;
 }
 @media screen and (min-width: 300px) {
-  header .imgbox img {
-    width: 80px;
-  }
-  header nav {
-    display: none;
-  }
-  header .btn {
-    display: block;
-  }
-}
-@media screen and (min-width: 600px) {
   header .imgbox img {
     width: 100px;
   }
@@ -52,7 +19,39 @@ header .menu .imgbox img {
     display: none;
   }
   header .btn {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 10px;
+    color: #6c757d;
+    margin-right: 3px;
+  }
+  header .btn:hover {
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 600px) {
+  header .imgbox img {
+    width: 150px;
+  }
+  header nav {
+    display: none;
+  }
+  header .btn {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid #6c757d;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #6c757d;
+    padding-right: 3px;
+    margin-right: 30px;
+  }
+  header .btn:hover {
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 900px) {
@@ -61,11 +60,13 @@ header .menu .imgbox img {
   }
   header nav {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
-  }
-  header nav a {
+    margin: 0 50px;
     font-size: 20px;
+    color: white;
+  }
+  header nav:hover {
+    color: #ffc800;
+    cursor: pointer;
   }
   header .btn {
     display: none;
