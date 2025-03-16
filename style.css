@@ -4,11 +4,10 @@ body {
 }
 
 a {
-  color: #ffff;
-  margin-right: 40px;
+  color: orange;
 }
 a:hover {
-  color: #ffc800
+  color: black;
 }
 
 .imgbox {
@@ -22,7 +21,7 @@ header {
 header .menu {
   position: fixed;
   margin-top: 50px;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 header .menu .imgbox img {
   cursor: pointer;
@@ -37,12 +36,12 @@ header .menu .imgbox img {
   header .btn {
     display: flex;
     flex-direction: row;
-    border: 1px solid #6c757d;
+    border: 0.5px solid #bdbdbd;
     border-radius: 5px;
     padding: 3px 8px;
     font-size: 10px;
     color: #6c757d;
-    margin-right: 3px;
+    margin-right: 50px;
   }
   header .btn:hover {
     cursor: pointer;
@@ -58,7 +57,7 @@ header .menu .imgbox img {
   header .btn {
     display: flex;
     flex-direction: row;
-    border: 3px solid #6c757d;
+    border: 0.5px solid #bdbdbd;
     border-radius: 5px;
     padding: 5px 10px;
     font-size: 15px;
@@ -75,8 +74,10 @@ header .menu .imgbox img {
     width: 200px;
   }
   header nav {
-    display: flex;    
-    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px;
     font-size: 20px;
     color: white;
   }
@@ -236,4 +237,43 @@ header .menu .imgbox img {
 }
 #portfolio .box:hover {
   cursor: pointer;
+}
+
+#about {
+  padding: 80px 0;
+}
+#about .box h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#about .box h3 {
+  font-size: 20px;
+  color: #6c757d;
+  margin: 20px 0 40px;
+}
+#about .textbox {
+  padding: 50px 0;
+}
+#about .textbox h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#about .textbox h3 {
+  font-size: 20px;
+  color: #6c757d;
+  margin: 20px 0 40px;
+}
+#about .textbox .imgbox {
+  width: 100%;
+  border-radius: 50px;
+  border: 7px solid #e9ecef;
+}
+#about .textbox .circlebox {
+  font-size: 30px;
+  font-weight: 400;
+  background-color: #ffc800;
+  color: white;
+  border-radius: 50px;
+  border: 7px solid #e9ecef;
+  padding: 20px 20px;
 }/*# sourceMappingURL=style.css.map */
