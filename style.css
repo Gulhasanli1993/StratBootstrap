@@ -249,9 +249,12 @@ header .menu .imgbox img {
 #about .box h3 {
   font-size: 20px;
   color: #6c757d;
-  margin: 20px 0 40px;
+  margin: 20px 0;
 }
 #about .textbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   padding: 50px 0;
 }
 #about .textbox h2 {
@@ -259,21 +262,147 @@ header .menu .imgbox img {
   font-weight: 400;
 }
 #about .textbox h3 {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 20px 0 40px;
+  line-height: 1.4;
+}
+#about .textbox .imgbox img {
+  border-radius: 100px;
+  border: 7px solid #e9ecef;
+}
+#about .textbox .circlebox {
+  background-color: #ffc800;
+  border-radius: 100px;
+  border: 7px solid #e9ecef;
+  color: white;
+}
+@media screen and (min-width: 300px) {
+  #about .imgbox img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+  }
+  #about .txt-right {
+    text-align: left;
+    margin-left: 15%;
+    position: relative;
+    right: 2%;
+  }
+  #about .txt-left {
+    text-align: left;
+    margin-left: 15%;
+    position: relative;
+    right: 2%;
+  }
+  #about .circlebox {
+    width: 80px;
+    height: 80px;
+    font-size: 15px;
+    position: relative;
+    right: 35%;
+    text-align: center;
+    padding: 10px 10px;
+  }
+}
+@media screen and (min-width: 770px) {
+  #about .imgbox img {
+    width: 120px;
+    height: 120px;
+    position: relative;
+  }
+  #about .txt-right {
+    text-align: left;
+    margin-left: 20%;
+    position: relative;
+    right: 5%;
+  }
+  #about .txt-left {
+    text-align: left;
+    margin-left: 20%;
+    position: relative;
+    right: 5%;
+  }
+  #about .circlebox {
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+    position: relative;
+    right: 35%;
+    text-align: center;
+    padding: 15px 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #about .imgbox img {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 45%;
+  }
+  #about .txt-right {
+    text-align: left;
+    margin-left: 40%;
+    position: relative;
+    right: 7%;
+  }
+  #about .txt-left {
+    text-align: right;
+    margin-right: 40%;
+    position: relative;
+    right: 20%;
+  }
+  #about .circlebox {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 45%;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 30px 30px;
+    line-heigt: 1.4;
+  }
+}
+
+#team {
+  padding: 80px 0;
+}
+#team h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#team h3 {
   font-size: 20px;
   color: #6c757d;
   margin: 20px 0 40px;
 }
-#about .textbox .imgbox {
-  width: 100%;
-  border-radius: 50px;
+#team .textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#team .textbox .imgbox img {
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
   border: 7px solid #e9ecef;
 }
-#about .textbox .circlebox {
+#team .textbox h2 {
   font-size: 30px;
   font-weight: 400;
-  background-color: #ffc800;
+  margin-top: 20px;
+}
+#team .textbox h3 {
+  font-size: 18px;
+  color: #6c757d;
+  margin: 10px 0 20px;
+}
+#team .textbox .btn .icon {
+  background-color: #212529;
   color: white;
   border-radius: 50px;
-  border: 7px solid #e9ecef;
-  padding: 20px 20px;
+  width: 40px;
+  height: 40px;
+  padding: 10px 10px;
 }/*# sourceMappingURL=style.css.map */
